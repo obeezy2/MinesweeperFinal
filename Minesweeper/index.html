@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="intro.css">
+
+</head>
+
+<body onload="initGame()">
+    <div id="wrapper">
+
+        <div class="intro">
+            <h1 class="logo-header">
+                <span class="logo">Mine</span><span class="logo">sweeper</span>
+            </h1>
+        </div>
+        <header>
+            <h4>Minesweeper</h4>
+            <div class="modal">
+                <button class="smiley" onclick="initGame()">&#128512</button>
+
+                <div class="game">
+                    <h1>
+                        <p></p>
+                        <span></span>
+                    </h1>
+
+        </header>
+
+        <table class="board-container">
+        </table>
+        <button class="easy" onclick="changeboardSize(4)">Easy Mode!</button>
+        <button class="medium" onclick="changeboardSize(8)">Medium Mode!</button>
+        <button class="hard" onclick="changeboardSize(12)">Hard Mode!</button>
+
+    </div>
+    <footer class="name">
+        <h4>Ariel Broukman</h4>
+    </footer>
+
+    <script src="opening.js"></script>
+    <script src="game.js"></script>
+    <script src="util.js"></script>
+</body>
+
+</html>
